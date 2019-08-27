@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+package-locak.json
+dist/
+coverage/
+storybook-static
+.jest-test-results.json
+lib/
