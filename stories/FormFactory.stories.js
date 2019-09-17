@@ -8,7 +8,6 @@ import doc1 from '../docs/FormFactory/demo1.md'
 import doc2 from '../docs/FormFactory/demo2.md'
 import doc3 from '../docs/FormFactory/demo3.md'
 import apiDoc from '../docs/FormFactory/api.md'
-import Summary from '../story-utils/Summary';
 
 const FormDecorator = storyFn => {
   const Component = Form.create()(storyFn)
@@ -217,7 +216,6 @@ storiesOf('表单.FormFactory-表单工厂', module)
 
     return (
       <>
-        <Summary name="FormFactory" />
         <FormFactory config={config} form={props.form} formItemLayout={formItemLayout} />
         <Button type="primary" onClick={handleSubmit} style={{ display: 'block', margin: 'auto' }}>
           提交
@@ -403,7 +401,6 @@ storiesOf('表单.FormFactory-表单工厂', module)
 
     return (
       <>
-        <Summary name="FormFactory" />
         <FormFactory config={basicConfig} form={props.form} />
         <Button type="primary" onClick={handleSubmit} style={{ display: 'block', margin: 'auto' }}>
           提交
@@ -479,7 +476,6 @@ storiesOf('表单.FormFactory-表单工厂', module)
 
     return (
       <>
-        <Summary name="FormFactory" />
         <FormFactory config={basicConfig} form={props.form} />
         <Button type="primary" onClick={handleSubmit} style={{ display: 'block', margin: 'auto' }}>
           提交

@@ -4,7 +4,6 @@ import { storiesOf } from '@storybook/react'
 import { Login, LoginMode } from '../components'
 
 import Collapse from '../story-utils/Collapse'
-import Summary from '../story-utils/Summary'
 import apiMD from '../docs/Login/api.md'
 import demo1MD from '../docs/Login/demo1.md'
 import demo2MD from '../docs/Login/demo2.md'
@@ -22,14 +21,12 @@ storiesOf('Login-登录', module)
   })
   .add('邮箱登录', () => (
     <>
-      <Summary name="Login"/>
       <Login mode={LoginMode.email} onLogin={() => alert('触发登录')} />
       <Collapse apiMarkdown={apiMD} codeMarkdown={demo1MD} />
     </>
   ))
   .add('邮箱登录-显示相关跳转接口', () => (
     <>
-      <Summary name="Login"/>
       <Login
         mode={LoginMode.email}
         onLogin={() => alert('触发登录')}
@@ -47,21 +44,18 @@ storiesOf('Login-登录', module)
   ))
   .add('id账号', () => (
     <>
-      <Summary name="Login"/>
       <Login mode={LoginMode.id} onLogin={() => alert('触发登录')} />
       <Collapse apiMarkdown={apiMD} codeMarkdown={demo3MD} />
     </>
   ))
   .add('支持双账号登录', () => (
     <>
-      <Summary name="Login"/>
       <Login mode={LoginMode.both} onLogin={() => alert('触发登录')} />
       <Collapse apiMarkdown={apiMD} codeMarkdown={demo4MD} />
     </>
   ))
   .add('自定表单校验规则', () => (
     <>
-      <Summary name="Login"/>
       <Login
         formRules={{
           username: [
@@ -84,7 +78,6 @@ storiesOf('Login-登录', module)
   ))
   .add('可配置验证码输入', () => (
     <>
-      <Summary name="Login"/>
       <Login
         mode={LoginMode.both}
         onLogin={() => alert('触发登录')}

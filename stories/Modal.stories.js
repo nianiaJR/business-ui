@@ -6,7 +6,6 @@ import { Modal } from '../components'
 import doc1 from '../docs/Modal/demo1.md'
 import api from '../docs/Modal/api.md'
 import Collapse from '../story-utils/Collapse';
-import Summary from '../story-utils/Summary';
 
 storiesOf('Modal-弹窗', module)
   .addParameters({
@@ -30,7 +29,6 @@ storiesOf('Modal-弹窗', module)
       updateModalHandler.hide()
     }
     return <>
-      <Summary name="Modal"></Summary>
       <Modal modalRef={handleInitModal} footer={null}>
         <div>
           this is modal content

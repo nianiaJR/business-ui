@@ -10,7 +10,6 @@ import doc4 from '../docs/LoadTableList/demo4.md'
 import doc5 from '../docs/LoadTableList/demo5.md'
 import Collapse from '../story-utils/Collapse'
 import { Button } from 'antd'
-import Summary from '../story-utils/Summary';
 
 const handleRequest = res => {
   if (res.status === 200 && res.data.code === '0') {
@@ -33,7 +32,6 @@ storiesOf('LoadTableList-请求表格列表', module)
   })
   .add('带分页的列表', () => (
     <>
-      <Summary name="LoadTableList"></Summary>
       <LoadTableList
         api={() => 'http://apistore.taobao.org/mock/846/api/load-table-list'}
         handleRequest={handleRequest}
@@ -75,7 +73,6 @@ storiesOf('LoadTableList-请求表格列表', module)
   ))
   .add('不带分页的列表', () => (
     <>
-      <Summary name="LoadTableList"></Summary>
       <LoadTableList
         api={() => 'http://apistore.taobao.org/mock/846/api/load-table-list'}
         handleRequest={handleRequest}
@@ -106,7 +103,6 @@ storiesOf('LoadTableList-请求表格列表', module)
   ))
   .add('表格可选状态', () => (
     <>
-      <Summary name="LoadTableList"></Summary>
       <LoadTableList
         api={() => 'http://apistore.taobao.org/mock/846/api/load-table-list'}
         handleRequest={handleRequest}
@@ -153,7 +149,6 @@ storiesOf('LoadTableList-请求表格列表', module)
 
     return (
       <>
-        <Summary name="LoadTableList"></Summary>
         <Button
           type="primary"
           onClick={() => tableHandler.reload()}
@@ -205,7 +200,6 @@ storiesOf('LoadTableList-请求表格列表', module)
   })
   .add('前端控制分页', () => (
     <>
-      <Summary name="LoadTableList"></Summary>
       <LoadTableList
         api={() => 'http://apistore.taobao.org/mock/846/api/load-table-list'}
         handleRequest={handleRequest}
@@ -243,7 +237,6 @@ storiesOf('LoadTableList-请求表格列表', module)
   ))
   .add('支持POST请求并可配置传递参数', () => (
     <>
-      <Summary name="LoadTableList"></Summary>
       <LoadTableList
         api={() => 'http://apistore.taobao.org/mock/846/api/load-table-list'}
         handleRequest={handleRequest}
