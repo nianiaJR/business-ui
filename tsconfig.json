@@ -23,8 +23,5 @@
   },
   "include": [
     "./components/index.ts",
-    "./components/retail/index.ts",
-    "./components/security/index.ts",
-    "./components/label/index.ts"
   ]
 }
