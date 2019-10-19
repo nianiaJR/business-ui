@@ -45,8 +45,7 @@ const zhCN = {
         phone: '请输入正确手机号',
         email: '请输入正确邮箱',
         id: '请输入正确用户ID'
-      },
-      copyright: `copyright @ ${new Date().getFullYear()} `
+      }
     },
     searchTip: {
       description: '已经选择 {number} 项， 共 {totalNum} 项',

@@ -7,6 +7,7 @@ module.exports = {
       [
         'feat', // 新功能
         'fix', // 修复 bug
+        'mod', // 修改 modify
         'docs', // 文档变更
         'style', // 样式改变
         'format', // 代码格式改变

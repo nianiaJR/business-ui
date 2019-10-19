@@ -45,8 +45,7 @@ const enUS = {
         phone: 'Please enter the right phone',
         email: 'Please enter the right email',
         id: 'Please enter the right user id'
-      },
-      copyright: `copyright @ ${new Date().getFullYear()} Business UI`
+      }
     },
     searchTip: {
       description: '{number} items selected. {totalNum} items in total.',

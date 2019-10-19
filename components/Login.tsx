@@ -136,16 +136,6 @@ const StyledFormItem = styled(FormItem)`
   }
 ` as any
 
-const StyledCopyright = styled.p`
-  margin-top: 78px;
-  font-size: 12px;
-  text-align: center;
-  color: #abadb0;
-  @media (max-width: 400px) {
-    margin-top: 48px;
-  }
-`
-
 class LoginComponent extends React.Component<IProps & FormComponentProps, {}> {
   render() {
     const { getFieldDecorator, setFieldsValue, getFieldValue } = this.props.form
@@ -310,7 +300,6 @@ class LoginComponent extends React.Component<IProps & FormComponentProps, {}> {
             )}
           </div>
         </Form>
-        <StyledCopyright>{intl.get('business.authorization.copyright')}</StyledCopyright>
       </StyledWrapperDiv>
     )
   }
