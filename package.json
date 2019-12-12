@@ -9,18 +9,16 @@
     "test-component": "tslint -c tslint.config ./**/*.ts{,x} & jest test/ --no-cache --json --outputFile=.jest-test-results.json || true",
     "storybook": "start-storybook -p 8004",
     "build-storybook": "build-storybook",
-    "build:lib": "rm -rf lib && tsc --emitDeclarationOnly && babel components  --out-dir lib --extensions '.ts,.tsx' --copy-files --config-file './.babelrc-publish'"
+    "build:lib": "rm -rf lib && tsc --emitDeclarationOnly && babel components  --out-dir lib --extensions '.ts,.tsx' --copy-files --config-file './.babelrc-publish'",
+    "deploy": "gh-pages -d storybook-static"
   },
-  "author": "jiarui.liang@taobao.org",
+  "author": "ljracm@gmail.com",
   "license": "ISC",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
-  },
-  "publishConfig": {
-    "registry": "https://npm.taobao.org"
   },
   "files": [
     "lib"
@@ -85,6 +83,7 @@
     "css-loader": "^1.0.1",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
+    "gh-pages": "^2.1.1",
     "html-webpack-plugin": "^3.2.0",
     "http-proxy-middleware": "^0.19.1",
     "husky": "^1.3.1",
@@ -127,6 +126,7 @@
     "awesome-typescript-loader": "^5.2.1",
     "axios": "^0.19.0",
     "highlight.js": "^9.14.2",
+    "js-cookie": "^2.2.1",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "prettier": "^1.18.2",
