@@ -125,7 +125,7 @@
     "antd": "^3.19.2",
     "awesome-typescript-loader": "^5.2.1",
     "axios": "^0.19.0",
-    "highlight.js": "^9.14.2",
+    "highlight.js": "^10.4.1",
     "js-cookie": "^2.2.1",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
